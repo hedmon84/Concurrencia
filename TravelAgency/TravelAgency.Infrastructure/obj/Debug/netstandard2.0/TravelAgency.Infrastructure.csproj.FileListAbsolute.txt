@@ -1,0 +1,12 @@
+C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Infrastructure\bin\Debug\netstandard2.0\TravelAgency.Infrastructure.deps.json
+C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Infrastructure\bin\Debug\netstandard2.0\TravelAgency.Infrastructure.dll
+C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Infrastructure\bin\Debug\netstandard2.0\TravelAgency.Infrastructure.pdb
+C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Infrastructure\bin\Debug\netstandard2.0\TravelAgency.Core.dll
+C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Infrastructure\bin\Debug\netstandard2.0\TravelAgency.Core.pdb
+C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Infrastructure\obj\Debug\netstandard2.0\TravelAgency.Infrastructure.csprojAssemblyReference.cache
+C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Infrastructure\obj\Debug\netstandard2.0\TravelAgency.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Infrastructure\obj\Debug\netstandard2.0\TravelAgency.Infrastructure.AssemblyInfo.cs
+C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Infrastructure\obj\Debug\netstandard2.0\TravelAgency.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Infrastructure\obj\Debug\netstandard2.0\TravelAgency.Infrastructure.csproj.CopyComplete
+C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Infrastructure\obj\Debug\netstandard2.0\TravelAgency.Infrastructure.dll
+C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Infrastructure\obj\Debug\netstandard2.0\TravelAgency.Infrastructure.pdb
