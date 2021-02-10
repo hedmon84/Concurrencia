@@ -1,8 +1,0 @@
-C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Core\bin\Debug\netstandard2.0\TravelAgency.Core.deps.json
-C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Core\bin\Debug\netstandard2.0\TravelAgency.Core.dll
-C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Core\bin\Debug\netstandard2.0\TravelAgency.Core.pdb
-C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Core\obj\Debug\netstandard2.0\TravelAgency.Core.AssemblyInfoInputs.cache
-C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Core\obj\Debug\netstandard2.0\TravelAgency.Core.AssemblyInfo.cs
-C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Core\obj\Debug\netstandard2.0\TravelAgency.Core.csproj.CoreCompileInputs.cache
-C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Core\obj\Debug\netstandard2.0\TravelAgency.Core.dll
-C:\Users\vinst\source\repos\TravelAgency\TravelAgency.Core\obj\Debug\netstandard2.0\TravelAgency.Core.pdb
