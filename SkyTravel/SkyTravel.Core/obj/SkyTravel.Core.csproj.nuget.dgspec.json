@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj": {}
+    "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj": {
+    "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj",
+        "projectUniqueName": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj",
         "projectName": "SkyTravel.Core",
-        "projectPath": "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj",
-        "packagesPath": "C:\\Users\\vinst\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Core\\obj\\",
+        "projectPath": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj",
+        "packagesPath": "C:\\Users\\MARCOFERNANDOCHACONM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vinst\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\MARCOFERNANDOCHACONM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -66,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

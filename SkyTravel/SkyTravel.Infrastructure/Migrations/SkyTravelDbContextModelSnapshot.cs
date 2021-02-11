@@ -15,40 +15,17 @@ namespace SkyTravel.Infrastructure.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.3");
 
-            modelBuilder.Entity("SkyTravel.Core.Entities.Destination", b =>
+            modelBuilder.Entity("SkyTravel.Core.Entities.Activity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Address")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("CityId")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("AvalaibleDates")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("City")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Country")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("LuxuryQuality")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("NearByActivities")
-                        .HasColumnType("TEXT");
-
-                    b.Property<float>("PriceByNight")
-                        .HasColumnType("REAL");
-
-                    b.Property<string>("TypeofBuilding")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("WiFiQuality")
+                    b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("state")
@@ -56,7 +33,130 @@ namespace SkyTravel.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Destionations");
+                    b.HasIndex("CityId");
+
+                    b.ToTable("Activity");
+                });
+
+            modelBuilder.Entity("SkyTravel.Core.Entities.City", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CountryId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("state")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CountryId");
+
+                    b.ToTable("City");
+                });
+
+            modelBuilder.Entity("SkyTravel.Core.Entities.Country", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("state")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Country");
+                });
+
+            modelBuilder.Entity("SkyTravel.Core.Entities.Place", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Addres")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("AvailableDates")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("CityId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<float>("PriceNight")
+                        .HasColumnType("REAL");
+
+                    b.Property<string>("TypeBuilding")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("WifiQuality")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("state")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CityId");
+
+                    b.ToTable("Place");
+                });
+
+            modelBuilder.Entity("SkyTravel.Core.Entities.Activity", b =>
+                {
+                    b.HasOne("SkyTravel.Core.Entities.City", "City")
+                        .WithMany("NearActivities")
+                        .HasForeignKey("CityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("City");
+                });
+
+            modelBuilder.Entity("SkyTravel.Core.Entities.City", b =>
+                {
+                    b.HasOne("SkyTravel.Core.Entities.Country", null)
+                        .WithMany("Cities")
+                        .HasForeignKey("CountryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("SkyTravel.Core.Entities.Place", b =>
+                {
+                    b.HasOne("SkyTravel.Core.Entities.City", "City")
+                        .WithMany("Places")
+                        .HasForeignKey("CityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("City");
+                });
+
+            modelBuilder.Entity("SkyTravel.Core.Entities.City", b =>
+                {
+                    b.Navigation("NearActivities");
+
+                    b.Navigation("Places");
+                });
+
+            modelBuilder.Entity("SkyTravel.Core.Entities.Country", b =>
+                {
+                    b.Navigation("Cities");
                 });
 #pragma warning restore 612, 618
         }

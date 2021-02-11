@@ -10,3 +10,15 @@ C:\Users\vinst\source\repos\SkyTravel\SkyTravel.Infrastructure\obj\Debug\netstan
 C:\Users\vinst\source\repos\SkyTravel\SkyTravel.Infrastructure\bin\Debug\netstandard2.1\SkyTravel.Core.dll
 C:\Users\vinst\source\repos\SkyTravel\SkyTravel.Infrastructure\bin\Debug\netstandard2.1\SkyTravel.Core.pdb
 C:\Users\vinst\source\repos\SkyTravel\SkyTravel.Infrastructure\obj\Debug\netstandard2.1\SkyTravel.Infrastructure.csproj.CopyComplete
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Infrastructure\bin\Debug\netstandard2.1\SkyTravel.Infrastructure.deps.json
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Infrastructure\bin\Debug\netstandard2.1\SkyTravel.Infrastructure.dll
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Infrastructure\bin\Debug\netstandard2.1\SkyTravel.Infrastructure.pdb
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Infrastructure\bin\Debug\netstandard2.1\SkyTravel.Core.dll
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Infrastructure\bin\Debug\netstandard2.1\SkyTravel.Core.pdb
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Infrastructure\obj\Debug\netstandard2.1\SkyTravel.Infrastructure.csprojAssemblyReference.cache
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Infrastructure\obj\Debug\netstandard2.1\SkyTravel.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Infrastructure\obj\Debug\netstandard2.1\SkyTravel.Infrastructure.AssemblyInfo.cs
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Infrastructure\obj\Debug\netstandard2.1\SkyTravel.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Infrastructure\obj\Debug\netstandard2.1\SkyTravel.Infrastructure.csproj.CopyComplete
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Infrastructure\obj\Debug\netstandard2.1\SkyTravel.Infrastructure.dll
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Infrastructure\obj\Debug\netstandard2.1\SkyTravel.Infrastructure.pdb

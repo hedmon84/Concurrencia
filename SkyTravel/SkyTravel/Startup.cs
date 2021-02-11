@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using SkyTravel.Core.Services;
 
 namespace SkyTravel
 {
@@ -29,10 +30,15 @@ namespace SkyTravel
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers().AddNewtonsoftJson(x =>
+               x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Serialize);
             services.AddControllers();
             services.AddHttpContextAccessor();
             services.AddDbContext<SkyTravelDbContext>((s, o) => o.UseSqlite("Data Source=SkyTravelDB.db"));
             services.AddScoped(typeof(IRepository<>), typeof(EntityFrameworkRepository<>));
+            services.AddScoped<IDestinationService, DestinationService>();
+            services.AddScoped(typeof(IDestinationRespository<>), typeof(DestinationRespository<>));
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

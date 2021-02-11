@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel\\SkyTravel.Api.csproj": {}
+    "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel\\SkyTravel.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj": {
+    "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj",
+        "projectUniqueName": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj",
         "projectName": "SkyTravel.Core",
-        "projectPath": "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj",
-        "packagesPath": "C:\\Users\\vinst\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Core\\obj\\",
+        "projectPath": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj",
+        "packagesPath": "C:\\Users\\MARCOFERNANDOCHACONM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vinst\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\MARCOFERNANDOCHACONM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -66,22 +70,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Infrastructure\\SkyTravel.Infrastructure.csproj": {
+    "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Infrastructure\\SkyTravel.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Infrastructure\\SkyTravel.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Infrastructure\\SkyTravel.Infrastructure.csproj",
         "projectName": "SkyTravel.Infrastructure",
-        "projectPath": "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Infrastructure\\SkyTravel.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\vinst\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Infrastructure\\SkyTravel.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\MARCOFERNANDOCHACONM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vinst\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\MARCOFERNANDOCHACONM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -94,8 +102,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj": {
-                "projectPath": "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj"
+              "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj": {
+                "projectPath": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj"
               }
             }
           }
@@ -136,22 +144,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel\\SkyTravel.Api.csproj": {
+    "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel\\SkyTravel.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel\\SkyTravel.Api.csproj",
+        "projectUniqueName": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel\\SkyTravel.Api.csproj",
         "projectName": "SkyTravel.Api",
-        "projectPath": "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel\\SkyTravel.Api.csproj",
-        "packagesPath": "C:\\Users\\vinst\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel\\obj\\",
+        "projectPath": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel\\SkyTravel.Api.csproj",
+        "packagesPath": "C:\\Users\\MARCOFERNANDOCHACONM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vinst\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\MARCOFERNANDOCHACONM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -164,11 +176,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj": {
-                "projectPath": "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj"
+              "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj": {
+                "projectPath": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj"
               },
-              "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Infrastructure\\SkyTravel.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\vinst\\source\\repos\\SkyTravel\\SkyTravel.Infrastructure\\SkyTravel.Infrastructure.csproj"
+              "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Infrastructure\\SkyTravel.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Infrastructure\\SkyTravel.Infrastructure.csproj"
               }
             }
           }
@@ -183,6 +195,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -212,7 +228,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

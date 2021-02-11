@@ -7,3 +7,12 @@ C:\Users\vinst\source\repos\SkyTravel\SkyTravel.Core\obj\Debug\netstandard2.1\Sk
 C:\Users\vinst\source\repos\SkyTravel\SkyTravel.Core\obj\Debug\netstandard2.1\SkyTravel.Core.csproj.CoreCompileInputs.cache
 C:\Users\vinst\source\repos\SkyTravel\SkyTravel.Core\obj\Debug\netstandard2.1\SkyTravel.Core.dll
 C:\Users\vinst\source\repos\SkyTravel\SkyTravel.Core\obj\Debug\netstandard2.1\SkyTravel.Core.pdb
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Core\bin\Debug\netstandard2.1\SkyTravel.Core.deps.json
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Core\bin\Debug\netstandard2.1\SkyTravel.Core.dll
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Core\bin\Debug\netstandard2.1\SkyTravel.Core.pdb
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Core\obj\Debug\netstandard2.1\SkyTravel.Core.AssemblyInfoInputs.cache
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Core\obj\Debug\netstandard2.1\SkyTravel.Core.AssemblyInfo.cs
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Core\obj\Debug\netstandard2.1\SkyTravel.Core.csproj.CoreCompileInputs.cache
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Core\obj\Debug\netstandard2.1\SkyTravel.Core.dll
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Core\obj\Debug\netstandard2.1\SkyTravel.Core.pdb
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Core\obj\Debug\netstandard2.1\SkyTravel.Core.csprojAssemblyReference.cache
