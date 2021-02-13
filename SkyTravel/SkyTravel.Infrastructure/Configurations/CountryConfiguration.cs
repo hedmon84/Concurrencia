@@ -13,6 +13,7 @@ namespace SkyTravel.Infrastructure.Configurations
         public void Configure(EntityTypeBuilder<Country> builder)
         {
             builder.HasKey(x => x.Id);
+            builder.Property(gg => gg.Id).ValueGeneratedOnAdd();
             builder.Property(x => x.Id).IsRequired();
             builder.Property(x => x.Name).IsRequired();
             builder.Property(x => x.state).IsRequired();

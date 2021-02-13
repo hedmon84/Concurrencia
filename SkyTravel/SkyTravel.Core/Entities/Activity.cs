@@ -7,8 +7,6 @@ namespace SkyTravel.Core.Entities
     public class Activity : BaseEntity
     {
 
-    
-
         public string Name { get; set; }
 
         public int CityId { get; set; }

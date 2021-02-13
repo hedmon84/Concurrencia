@@ -8,8 +8,8 @@ using SkyTravel.Infrastructure;
 namespace SkyTravel.Infrastructure.Migrations
 {
     [DbContext(typeof(SkyTravelDbContext))]
-    [Migration("20210211062933_first")]
-    partial class first
+    [Migration("20210213030414_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -131,13 +131,11 @@ namespace SkyTravel.Infrastructure.Migrations
 
             modelBuilder.Entity("SkyTravel.Core.Entities.City", b =>
                 {
-                    b.HasOne("SkyTravel.Core.Entities.Country", "Country")
+                    b.HasOne("SkyTravel.Core.Entities.Country", null)
                         .WithMany("Cities")
                         .HasForeignKey("CountryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Country");
                 });
 
             modelBuilder.Entity("SkyTravel.Core.Entities.Place", b =>

@@ -15,16 +15,15 @@ namespace SkyTravel.Infrastructure.Configurations
 
             builder.Property(gg => gg.Id).ValueGeneratedOnAdd();
 
-            builder.Property(gg => gg.Addres).IsRequired();
-
+            builder.Property(gg => gg.Address).IsRequired();
 
             builder.Property(gg => gg.TypeBuilding).IsRequired();
 
             builder.Property(gg => gg.WifiQuality).IsRequired();
 
-            builder.Property(gg => gg.AvailableDates).IsRequired();
-            
+            builder.Property(gg => gg.AvailableFrom).IsRequired();
 
+            builder.Property(gg => gg.AvailableTo).IsRequired();
 
         }
     }

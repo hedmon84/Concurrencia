@@ -11,13 +11,14 @@ namespace SkyTravel.Core.Entities
 
         public string TypeBuilding { get; set; }
 
-        public string Addres { get; set; }
+        public string Address { get; set; }
 
         public int WifiQuality { get; set; }
 
         public float PriceNight { get; set; }
 
-        public string AvailableDates { get; set; }
+        public string AvailableFrom { get; set; }
+        public string AvailableTo { get; set; }
 
         public int CityId { get; set; }
 

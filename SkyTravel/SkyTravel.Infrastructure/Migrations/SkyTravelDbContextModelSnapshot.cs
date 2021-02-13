@@ -85,11 +85,15 @@ namespace SkyTravel.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Addres")
+                    b.Property<string>("Address")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("AvailableDates")
+                    b.Property<string>("AvailableFrom")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("AvailableTo")
                         .IsRequired()
                         .HasColumnType("TEXT");
 

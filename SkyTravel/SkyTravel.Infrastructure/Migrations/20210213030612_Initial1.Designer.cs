@@ -8,8 +8,8 @@ using SkyTravel.Infrastructure;
 namespace SkyTravel.Infrastructure.Migrations
 {
     [DbContext(typeof(SkyTravelDbContext))]
-    [Migration("20210211063727_firs")]
-    partial class firs
+    [Migration("20210213030612_Initial1")]
+    partial class Initial1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -87,11 +87,15 @@ namespace SkyTravel.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Addres")
+                    b.Property<string>("Address")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("AvailableDates")
+                    b.Property<string>("AvailableFrom")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("AvailableTo")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
