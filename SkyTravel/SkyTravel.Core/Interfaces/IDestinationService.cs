@@ -9,5 +9,6 @@ namespace SkyTravel.Core.Interfaces
     {
 
         ServiceResult<IEnumerable<Country>> FilterAll();
+        ServiceResult<IEnumerable<Country>> FilterByOptions(string place, string date, string date2, float price, int internet);
     }
 }

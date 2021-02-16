@@ -9,5 +9,6 @@ namespace SkyTravel.Core.Interfaces
     public interface IDestinationRespository<T>
     {
         IEnumerable<T> FilterAll();
+        IEnumerable<T> FilterBy(Expression<Func<Country, bool>> predicate);
     }
 }

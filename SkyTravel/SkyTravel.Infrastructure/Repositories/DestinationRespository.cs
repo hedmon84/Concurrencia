@@ -27,5 +27,11 @@ namespace SkyTravel.Infrastructure.Repositories
 
             return (IEnumerable<T>)_destinationDbContext.Country.Include(x => x.Cities);
         }
+
+        IEnumerable<T> IDestinationRespository<T>.FilterBy(Expression<Func<Country, bool>> predicate)
+        {
+
+            return (IEnumerable<T>)_destinationDbContext.Country.Include(x => x.Cities).ThenInclude(r => r.Places).ThenInclude(x => x.City.NearActivities).FirstOrDefault(predicate);
+        }
     }
 }
