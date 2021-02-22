@@ -16,7 +16,7 @@ namespace SkyTravel.Infrastructure.Configurations
             builder.Property(gg => gg.Id).ValueGeneratedOnAdd();
             builder.Property(x => x.Id).IsRequired();
             builder.Property(x => x.Name).IsRequired();
-            builder.Property(x => x.state).IsRequired();
+            
 
 
         }
