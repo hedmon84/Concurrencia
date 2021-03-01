@@ -7,10 +7,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SkyTravel.Infrastructure.Repositories
 {
-    public class DestinationRespository<T> : IDestinationRespository<T> where T : BaseEntity
+    public class DestinationRespository : IDestinationRespository
     {
 
 
@@ -22,16 +23,16 @@ namespace SkyTravel.Infrastructure.Repositories
         }
        
 
-        IEnumerable<T> IDestinationRespository<T>.FilterAll()
+       public async Task<IEnumerable<Country>> FilterAll()
         {
-
-            return (IEnumerable<T>)_destinationDbContext.Country.Include(x => x.Cities);
+            return await _destinationDbContext.Country.Include(x => x.Cities).ThenInclude(x => x.NearActivities).ToListAsync();
+            
+           
         }
 
-        IEnumerable<T> IDestinationRespository<T>.FilterBy(Expression<Func<Country, bool>> predicate)
+        public IEnumerable<Country> FilterBy(Expression<Func<Country, bool>> predicate)
         {
-
-            return (IEnumerable<T>)_destinationDbContext.Country.Include(x => x.Cities).ThenInclude(r => r.Places).ThenInclude(x => x.City.NearActivities).FirstOrDefault(predicate);
+            throw new NotImplementedException();
         }
     }
 }

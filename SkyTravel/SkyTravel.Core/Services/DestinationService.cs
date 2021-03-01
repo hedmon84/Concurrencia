@@ -3,20 +3,21 @@ using SkyTravel.Core.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SkyTravel.Core.Services
 {
     public class DestinationService : IDestinationService
     {
 
-        private readonly IDestinationRespository<Country> _destinationService;
+        private readonly IDestinationRespository _destinationService;
 
-        public DestinationService(IDestinationRespository<Country> destinationService)
+        public DestinationService(IDestinationRespository destinationService)
         {
             _destinationService = destinationService;
         }
 
-        public ServiceResult<IEnumerable<Country>> FilterByOptions(string place, string date,string date2, float price, int internet)
+        public async Task<ServiceResult<IEnumerable<Country>>> FilterByOptions(string place, string date,string date2, float price, int internet)
         {
             Place tmpPlace = new Place();
             tmpPlace.AvailableFrom = date;
@@ -29,9 +30,10 @@ namespace SkyTravel.Core.Services
             return ServiceResult<IEnumerable<Country>>.SuccessResult(_destinationService.FilterBy(x=> x.Cities.Contains(tmpcity)));
         }
 
-        ServiceResult<IEnumerable<Country>> IDestinationService.FilterAll()
+        public async Task<ServiceResult<IEnumerable<Country>>> FilterAll()
         {
-            return ServiceResult<IEnumerable<Country>>.SuccessResult(_destinationService.FilterAll());
+            var result = await _destinationService.FilterAll();
+            return ServiceResult<IEnumerable<Country>>.SuccessResult(result);
         }
     }
 }

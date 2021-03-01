@@ -1,7 +1,9 @@
-﻿using SkyTravel.Core.Enum;
+﻿using SkyTravel.Core.Entities;
+using SkyTravel.Core.Enum;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SkyTravel.Core
 {
@@ -32,6 +34,11 @@ namespace SkyTravel.Core
         public static ServiceResult<T> NotFoundResult(string error)
         {
             return new ServiceResult<T>(ResponseCode.NotFound, error, default(T));
+        }
+
+        internal static ServiceResult<IEnumerable<Country>> SuccessResult(Task<IReadOnlyList<Country>> task)
+        {
+            throw new NotImplementedException();
         }
     }
 }

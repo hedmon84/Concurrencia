@@ -3,12 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SkyTravel.Core.Interfaces
 {
-    public interface IDestinationRespository<T>
+    public interface IDestinationRespository
     {
-        IEnumerable<T> FilterAll();
-        IEnumerable<T> FilterBy(Expression<Func<Country, bool>> predicate);
+        Task<IEnumerable<Country>> FilterAll();
+        IEnumerable<Country> FilterBy(Expression<Func<Country, bool>> predicate);
     }
 }

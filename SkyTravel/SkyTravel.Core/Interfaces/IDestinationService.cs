@@ -2,13 +2,14 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SkyTravel.Core.Interfaces
 {
     public interface IDestinationService
     {
 
-        ServiceResult<IEnumerable<Country>> FilterAll();
-        ServiceResult<IEnumerable<Country>> FilterByOptions(string place, string date, string date2, float price, int internet);
+        Task<ServiceResult<IEnumerable<Country>>> FilterAll();
+        Task<ServiceResult<IEnumerable<Country>>> FilterByOptions(string place, string date, string date2, float price, int internet);
     }
 }
