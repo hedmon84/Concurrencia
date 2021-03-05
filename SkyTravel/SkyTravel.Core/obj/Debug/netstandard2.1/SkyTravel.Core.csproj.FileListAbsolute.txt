@@ -33,3 +33,4 @@ C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel
 C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Core\obj\Debug\netstandard2.1\SkyTravel.Core.csproj.CoreCompileInputs.cache
 C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Core\obj\Debug\netstandard2.1\SkyTravel.Core.dll
 C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Core\obj\Debug\netstandard2.1\SkyTravel.Core.pdb
+C:\Users\MARCOFERNANDOCHACONM\Desktop\Concurrencia\github\Concurrencia\SkyTravel\SkyTravel.Core\obj\Debug\netstandard2.1\SkyTravel.Core.csprojAssemblyReference.cache
