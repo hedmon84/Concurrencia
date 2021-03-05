@@ -66,6 +66,7 @@ namespace WorkerService
             }
         }
 
+
         private void DeliveredToConsole(string message)
         {
             var factory = new ConnectionFactory
