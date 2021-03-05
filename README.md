@@ -6,6 +6,11 @@
 
 
 
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+
 
 
 #End Points
