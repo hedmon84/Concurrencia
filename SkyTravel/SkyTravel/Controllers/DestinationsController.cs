@@ -29,7 +29,19 @@ namespace SkyTravel.Api.Controllers
             var serviceResult = await _destinationService.FilterAll();
             if (serviceResult.ResponseCode != ResponseCode.Success)
                 return BadRequest(serviceResult.Error);
-            return Ok(serviceResult.Result);
+           
+            
+          
+            return Ok(serviceResult.Result.Select( x => new CountryDto
+            {
+               Name = x.Name,
+               Cities = x.Cities,
+
+
+            }
+          
+                
+             ));
         }
 
         //[HttpGet]
