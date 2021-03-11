@@ -20,7 +20,7 @@ namespace SkyTravel.Core.Entities
         public string AvailableFrom { get; set; }
         public string AvailableTo { get; set; }
 
-        public int CityId { get; set; }
+   
 
        
     }

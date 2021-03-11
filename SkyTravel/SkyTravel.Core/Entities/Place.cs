@@ -22,6 +22,6 @@ namespace SkyTravel.Core.Entities
 
         public int CityId { get; set; }
 
-        public City City { get; set; }
+     //   public City City { get; set; }
     }
 }

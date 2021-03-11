@@ -4,12 +4,12 @@ using System.Text;
 
 namespace SkyTravel.Core.Entities
 {
-    public class Activity 
+    public class ActivityDto 
     {
 
         public string Name { get; set; }
 
-        public int CityId { get; set; }
+  
 
        
     }

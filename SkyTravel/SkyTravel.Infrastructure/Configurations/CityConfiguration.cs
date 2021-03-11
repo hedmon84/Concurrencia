@@ -17,13 +17,13 @@ namespace SkyTravel.Infrastructure.Configurations
             builder.Property(x => x.Name).IsRequired();
 
 
-            builder.HasMany<Activity>(x => x.NearActivities)
-                .WithOne(x => x.City)
-               .HasForeignKey(x => x.CityId);
+           // builder.HasMany<Activity>(x => x.NearActivities)
+           //     .WithOne(x => x.City)
+           //    .HasForeignKey(x => x.CityId);
 
-            builder.HasMany<Place>(x => x.Places)
-            .WithOne(x => x.City)
-           .HasForeignKey(x => x.CityId);
+           // builder.HasMany<Place>(x => x.Places)
+           // .WithOne(x => x.City)
+           //.HasForeignKey(x => x.CityId);
 
 
                          

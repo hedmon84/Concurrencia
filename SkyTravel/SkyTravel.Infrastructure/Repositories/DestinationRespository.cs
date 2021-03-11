@@ -25,7 +25,12 @@ namespace SkyTravel.Infrastructure.Repositories
 
        public async Task<IEnumerable<Country>> FilterAll()
         {
-            return await _destinationDbContext.Country.Include(x => x.Cities).ThenInclude(x => x.NearActivities).ToListAsync();
+            return await _destinationDbContext.Country
+                .Include(x => x.Cities)
+                .ThenInclude(x => x.NearActivities)
+                .Include(x => x.Cities)
+                .ThenInclude(x => x.Places)
+                .ToListAsync();
             
            
         }

@@ -11,17 +11,15 @@ namespace SkyTravel.Api.Models
 
         public CityDto()
         {
-            NearActivities = new List<Activity>();
-            Places = new List<Place>();
+            NearActivities = new List<ActivityDto>();
+            Places = new List<PlaceDto>();
         }
 
         public string Name { get; set; }
 
-        public int CountryId { get; set; }
+        public ICollection<ActivityDto> NearActivities { get; set; }
 
-        public ICollection<Activity> NearActivities { get; set; }
-
-        public ICollection<Place> Places { get; set; }
+        public ICollection<PlaceDto> Places { get; set; }
 
     }
 }

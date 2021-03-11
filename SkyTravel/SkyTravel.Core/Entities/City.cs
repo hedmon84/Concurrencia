@@ -18,6 +18,6 @@ namespace SkyTravel.Core.Entities
 
         public ICollection<Activity> NearActivities { get; set; }
 
-        public ICollection<Place> Places { get; set; }
+      public ICollection<Place> Places { get; set; }
     }
 }

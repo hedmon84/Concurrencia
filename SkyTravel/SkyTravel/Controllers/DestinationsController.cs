@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SkyTravel.Api.Models;
 using SkyTravel.Core.Entities;
 using SkyTravel.Core.Enum;
 using SkyTravel.Core.Interfaces;
@@ -24,23 +25,41 @@ namespace SkyTravel.Api.Controllers
 
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Country>>> Get()
+        public async Task<ActionResult<IEnumerable<CountryDto>>> Get()
         {
             var serviceResult = await _destinationService.FilterAll();
             if (serviceResult.ResponseCode != ResponseCode.Success)
                 return BadRequest(serviceResult.Error);
-           
-            
-          
-            return Ok(serviceResult.Result.Select( x => new CountryDto
+
+
+
+            return Ok(serviceResult.Result.Select(x => new CountryDto
             {
-               Name = x.Name,
-               Cities = x.Cities,
+                Name = x.Name,
+                Cities = x.Cities.Select(y => new CityDto
+                {
+                    Name = y.Name,
+                    Places = y.Places.Select(z => new PlaceDto
+                    {
+                        
+                        Address = z.Address,
+                        AvailableFrom = z.AvailableFrom,
+                        AvailableTo = z.AvailableTo,
+                        PriceNight = z.PriceNight,
+                        TypeBuilding = z.TypeBuilding,
+                        WifiQuality = z.WifiQuality,
+
+                    }).ToList(),
+                    NearActivities = y.NearActivities.Select(w => new ActivityDto
+                    {
+                        Name = w.Name,
+                    }).ToList(),
+                }).ToList()
 
 
             }
-          
-                
+
+
              ));
         }
 
