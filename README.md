@@ -8,7 +8,7 @@
 
 | Syntax      | Description | Retorno | 
 | ----------- | ----------- |  -----  |
-| https://localhost:44369/api/Destinations     | Title       |         |
+|             | Title       |         |
 | Paragraph   | Text        |         |
 
 
