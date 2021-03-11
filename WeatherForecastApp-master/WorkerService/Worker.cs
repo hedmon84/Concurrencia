@@ -30,7 +30,7 @@ namespace WorkerService
             };
             _connection = factory.CreateConnection();
             _channel = _connection.CreateModel();
-            _channel.QueueDeclare("reventuki", false, false, false, null);
+            _channel.QueueDeclare("delivered", false, false, false, null);
             _consumer = new EventingBasicConsumer(_channel);
         }
 
@@ -40,10 +40,11 @@ namespace WorkerService
             {
                 var body = content.Body.ToArray();
                 var message = Encoding.UTF8.GetString(body);
-                string something = await do_something(message);
+                var something = await do_something(message);
                 DeliveredToConsole(something);
+
             };
-            _channel.BasicConsume("reventuki", true, _consumer);
+            _channel.BasicConsume("delivered", true, _consumer);
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -61,9 +62,10 @@ namespace WorkerService
             {
                 var result = await client.GetStringAsync($"http://localhost:59165/weatherforecast/{date}");
                 return result;
-
+                await Task.Delay(60000);
             }
         }
+
 
         private void DeliveredToConsole(string message)
         {
@@ -76,12 +78,14 @@ namespace WorkerService
             {
                 using (var channel = connection.CreateModel())
                 {
-                    channel.QueueDeclare("violento", false, false, false, null);
+                    channel.QueueDeclare("send", false, false, false, null);
                     var body = Encoding.UTF8.GetBytes(message);
-
-                    channel.BasicPublish("", "violento", null, body);
+                    channel.BasicPublish("", "send", null, body);
                 }
             }
+
         }
+
+        
     }
 }

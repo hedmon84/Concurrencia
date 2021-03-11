@@ -5,19 +5,11 @@
 #DB Diagram
 
 
+#End Points 1
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-
-
-
-#End Points
-
-   |     URL                                     |  Param |                     Retorno                                      |  Descripción                                         
-
-1 .| https://localhost:44369/api/Destinations     | none    |[
+| URL         | Param       | Description |  Retorno     |
+| ----------- | ----------- |  -----      |  ----------- |
+| https://localhost:44369/api/Destinations   | none            |   Retorna la lista de los destinos disponibles          |      [
                                                                                   {
                                                                                       "name": "United State",
                                                                                       "cities": [
@@ -43,11 +35,30 @@
                                                                                           }
                                                                                       ],
                                                                                       "id": 2
-                                                                                  },                                           | Retorna la lista de los destinos disponibles.|
-                                                                                  
-                                                                                  
-                                                                                  
-2 .| https://localhost:44369/api/{place}/{date}/{date2}/{price}/{internet}     | none    | [{
+                                                                                  },                            |
+
+----------------------------------------------------------
+
+#End Points 2
+
+
+| URL         | Param       | Description |  Retorno     |
+| ----------- | ----------- |  -----      |  ----------- |
+|https://localhost:44369/api/{place}/{date}/{date2}/{price}/{internet}    | none            |    Retorna el Destino con el filtro especificado.         |      |[
+                                                                                  {
+                                                                                      "name": "United State",
+                                                                                      "cities": [
+                                                                                          {
+                                                                                              "name": "Los Angeles",
+                                                                                              "countryId": 1,
+                                                                                              "nearActivities": [],
+                                                                                              "places": [],
+                                                                                              "id": 1
+                                                                                          }
+                                                                                      ],
+                                                                                      "id": 1
+                                                                                  },
+                                                                                  {
                                                                                       "name": "Honduras",
                                                                                       "cities": [
                                                                                           {
@@ -59,4 +70,9 @@
                                                                                           }
                                                                                       ],
                                                                                       "id": 2
-                                                                                  },              ]                | Retorna el Destino con el filtro especificado.|
+                                                                                  },                         |
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                  
+
