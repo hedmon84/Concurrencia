@@ -6,10 +6,10 @@
 
 
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| Syntax      | Description | Retorno | 
+| ----------- | ----------- |  -----  |
+| Header      | Title       |         |
+| Paragraph   | Text        |         |
 
 
 
