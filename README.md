@@ -6,10 +6,10 @@
 
 
 
-| Syntax      | Description | Retorno | 
-| ----------- | ----------- |  -----  |
-|             | Title       |         |
-| Paragraph   | Text        |         |
+| URL         | Param       | Retorno |  Description |
+| ----------- | ----------- |  -----  |  ----------- |
+|             | Title       |         |              |
+| Paragraph   | Text        |         |              |
 
 
 
