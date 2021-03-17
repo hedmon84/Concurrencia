@@ -10,6 +10,10 @@ namespace SkyTravel.Core.Interfaces
     public interface IDestinationRespository
     {
         Task<IEnumerable<Country>> FilterAll();
-        IEnumerable<Country> FilterBy(Expression<Func<Country, bool>> predicate);
+        Task<IEnumerable<Activity>> FilterAll_Activities();
+        Task<IEnumerable<Place>> FiltarAll_Internet();
+
+        Task <IEnumerable<Country>> Filterby(FilterMaster search);
+   
     }
 }

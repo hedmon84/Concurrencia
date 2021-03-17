@@ -21,9 +21,18 @@ namespace SkyTravel.Infrastructure.Repositories
         {
             _destinationDbContext = destinationDbContext;
         }
-       
 
-       public async Task<IEnumerable<Country>> FilterAll()
+        public async Task<IEnumerable<Place>> FiltarAll_Internet()
+        {
+            return await _destinationDbContext.Place.ToListAsync();
+        }
+
+        public Task<IQueryable<Country>> Filter(Expression<Func<Country, bool>> predicate)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<IEnumerable<Country>> FilterAll()
         {
             return await _destinationDbContext.Country
                 .Include(x => x.Cities)
@@ -35,9 +44,26 @@ namespace SkyTravel.Infrastructure.Repositories
            
         }
 
-        public IEnumerable<Country> FilterBy(Expression<Func<Country, bool>> predicate)
+        public async Task<IEnumerable<Activity>> FilterAll_Activities()
         {
-            throw new NotImplementedException();
+            return await _destinationDbContext.Activity
+                .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Country>> FilterBy(Expression<Func<Country, bool>> predicate)
+        {
+            return await _destinationDbContext.Set<Country>().Where(predicate).ToListAsync();
+        }
+
+        public async Task<IEnumerable<Country>> Filterby(FilterMaster search)
+        {
+            return await _destinationDbContext.Country.Where(x => x.Name == search.place)
+                  .Include(x => x.Cities)
+                  .ThenInclude(x => x.NearActivities)
+                  .Include(x => x.Cities)
+                  .ThenInclude(x => x.Places.Where(y => y.AvailableFrom == search.date && y.AvailableTo == search.date2 && y.WifiQuality == search.internet && y.PriceNight == search.price))
+                  .ToListAsync();
+
         }
     }
 }

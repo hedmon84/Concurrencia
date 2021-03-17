@@ -17,23 +17,31 @@ namespace SkyTravel.Core.Services
             _destinationService = destinationService;
         }
 
-        public async Task<ServiceResult<IEnumerable<Country>>> FilterByOptions(string place, string date,string date2, float price, int internet)
+        public async Task<ServiceResult<IEnumerable<Country>>> FilterByOptions(FilterMaster search)
         {
-            Place tmpPlace = new Place();
-            tmpPlace.AvailableFrom = date;
-            tmpPlace.AvailableTo = date2;
-            tmpPlace.PriceNight = price;
-            City tmpcity = new City();
-            tmpcity.Name = place;
-            tmpcity.Places.Contains(tmpPlace);
-           
-            return ServiceResult<IEnumerable<Country>>.SuccessResult(_destinationService.FilterBy(x=> x.Cities.Contains(tmpcity)));
+
+            var result = await _destinationService.Filterby(search);
+
+
+            return ServiceResult<IEnumerable<Country>>.SuccessResult(result);
         }
 
         public async Task<ServiceResult<IEnumerable<Country>>> FilterAll()
         {
             var result = await _destinationService.FilterAll();
             return ServiceResult<IEnumerable<Country>>.SuccessResult(result);
+        }
+
+        public async Task<ServiceResult<IEnumerable<Activity>>> FilterAcivities()
+        {
+            var result = await _destinationService.FilterAll_Activities();
+            return ServiceResult<IEnumerable<Activity>>.SuccessResult(result);
+        }
+
+        public async Task<ServiceResult<IEnumerable<Place>>> FilterInternet()
+        {
+            var result = await _destinationService.FiltarAll_Internet();
+            return ServiceResult<IEnumerable<Place>>.SuccessResult(result);
         }
     }
 }

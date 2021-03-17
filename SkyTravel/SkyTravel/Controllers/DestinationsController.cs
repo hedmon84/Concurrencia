@@ -36,6 +36,7 @@ namespace SkyTravel.Api.Controllers
             return Ok(serviceResult.Result.Select(x => new CountryDto
             {
                 Name = x.Name,
+               
                 Cities = x.Cities.Select(y => new CityDto
                 {
                     Name = y.Name,
@@ -63,14 +64,66 @@ namespace SkyTravel.Api.Controllers
              ));
         }
 
-        //[HttpGet]
-        //[Route("{place}/{date}/{date2}/{price}/{internet}")]
-        //public ActionResult<IEnumerable<Country>> Getby(string place, string date, string date2, float price, int internet)
-        //{
-        //    var serviceResult = _destinationService.FilterByOptions(place, date, date2,price,internet);
-        //    if (serviceResult.ResponseCode != ResponseCode.Success)
-        //        return BadRequest(serviceResult.Error);
-        //    return Ok(serviceResult.Result);
-        //}
+
+
+        //experience
+
+        [HttpGet]
+        [Route("Experience")]
+        public async Task<ActionResult<IEnumerable<ActivityDto>>> Getby()
+        {
+            var serviceResult = await _destinationService.FilterAcivities();
+
+            if (serviceResult.ResponseCode != ResponseCode.Success)
+                return BadRequest(serviceResult.Error);
+
+            return Ok(serviceResult.Result.Select(x => new ActivityDto
+            {
+
+                Name = x.Name
+
+
+            }).ToList()); 
+
+
+
+        }
+
+        //Internet
+
+        [HttpGet]
+        [Route("Internet")]
+        public async Task<ActionResult<IEnumerable<InternetDto>>> GetInternet()
+        {
+            var serviceResult = await _destinationService.FilterInternet();
+
+            if (serviceResult.ResponseCode != ResponseCode.Success)
+                return BadRequest(serviceResult.Error);
+
+            return Ok(serviceResult.Result.Select(x => new InternetDto
+            {
+
+                WifiQuality = x.WifiQuality
+
+
+            }).ToList());
+
+
+
+        }
+
+
+
+
+        //Internet
+        [HttpGet]
+        [Route("search")]
+        public async Task<ActionResult<IEnumerable<CountryDto>>> GetS( [FromBody] FilterMaster search)
+        {
+            var serviceResult = await _destinationService.FilterByOptions(search);
+            if (serviceResult.ResponseCode != ResponseCode.Success)
+                return BadRequest(serviceResult.Error);
+            return Ok(serviceResult.Result);
+        }
     }
 }

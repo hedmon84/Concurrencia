@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Infrastructure\\SkyTravel.Infrastructure.csproj": {}
+    "C:\\Users\\big-h\\OneDrive\\Desktop\\Concu ppt\\Concurrencia\\SkyTravel\\SkyTravel.Infrastructure\\SkyTravel.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj": {
+    "C:\\Users\\big-h\\OneDrive\\Desktop\\Concu ppt\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj",
+        "projectUniqueName": "C:\\Users\\big-h\\OneDrive\\Desktop\\Concu ppt\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj",
         "projectName": "SkyTravel.Core",
-        "projectPath": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj",
-        "packagesPath": "C:\\Users\\MARCOFERNANDOCHACONM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\obj\\",
+        "projectPath": "C:\\Users\\big-h\\OneDrive\\Desktop\\Concu ppt\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj",
+        "packagesPath": "C:\\Users\\big-h\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\big-h\\OneDrive\\Desktop\\Concu ppt\\Concurrencia\\SkyTravel\\SkyTravel.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MARCOFERNANDOCHACONM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\big-h\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -76,24 +74,22 @@
         }
       }
     },
-    "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Infrastructure\\SkyTravel.Infrastructure.csproj": {
+    "C:\\Users\\big-h\\OneDrive\\Desktop\\Concu ppt\\Concurrencia\\SkyTravel\\SkyTravel.Infrastructure\\SkyTravel.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Infrastructure\\SkyTravel.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\big-h\\OneDrive\\Desktop\\Concu ppt\\Concurrencia\\SkyTravel\\SkyTravel.Infrastructure\\SkyTravel.Infrastructure.csproj",
         "projectName": "SkyTravel.Infrastructure",
-        "projectPath": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Infrastructure\\SkyTravel.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\MARCOFERNANDOCHACONM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\big-h\\OneDrive\\Desktop\\Concu ppt\\Concurrencia\\SkyTravel\\SkyTravel.Infrastructure\\SkyTravel.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\big-h\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\big-h\\OneDrive\\Desktop\\Concu ppt\\Concurrencia\\SkyTravel\\SkyTravel.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MARCOFERNANDOCHACONM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\big-h\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -106,8 +102,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj": {
-                "projectPath": "C:\\Users\\MARCOFERNANDOCHACONM\\Desktop\\Concurrencia\\github\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj"
+              "C:\\Users\\big-h\\OneDrive\\Desktop\\Concu ppt\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj": {
+                "projectPath": "C:\\Users\\big-h\\OneDrive\\Desktop\\Concu ppt\\Concurrencia\\SkyTravel\\SkyTravel.Core\\SkyTravel.Core.csproj"
               }
             }
           }
