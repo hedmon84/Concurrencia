@@ -57,13 +57,22 @@ namespace SkyTravel.Infrastructure.Repositories
 
         public async Task<IEnumerable<Country>> Filterby(FilterMaster search)
         {
-            return await _destinationDbContext.Country.Where(x => x.Name == search.place)
-                  .Include(x => x.Cities)
-                  .ThenInclude(x => x.NearActivities)
-                  .Include(x => x.Cities)
-                  .ThenInclude(x => x.Places.Where(y => y.AvailableFrom == search.date && y.AvailableTo == search.date2 && y.WifiQuality == search.internet && y.PriceNight == search.price))
-                  .ToListAsync();
+            var data = await (from country in _destinationDbContext.Country
+                              from city in country.Cities
+                              from place in city.Places
+                              where place.AvailableFrom == search.date || place.AvailableTo == search.date2 ||
+                                    place.PriceNight == search.price || place.WifiQuality == search.internet
+                              select country)
+                            .Include(x => x.Cities)
+                            .ThenInclude(x => x.NearActivities)
+                            .Include(x => x.Cities)
+                            .ThenInclude(x => x.Places)
+                            .ToListAsync();
+
+            return data;
 
         }
     }
 }
+
+
